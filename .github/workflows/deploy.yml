@@ -14,7 +14,7 @@ jobs:
         working-directory: code-complete-game
         run: |
           npm install
-          npm run build -- --public-url /fox-game/
+          npm run build -- --public-url
       - name: Deploy site to gh-pages branch
         uses: crazy-max/ghaction-github-pages@v1.4.0
         env:
