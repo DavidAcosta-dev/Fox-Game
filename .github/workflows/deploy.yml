@@ -14,7 +14,7 @@ jobs:
         working-directory: /
         run: |
           npm install
-          npm run build -- --public-url /Fox-Game/
+          npm run build -- --public-url https://acosta816.github.io/Fox-Game/
       - name: Deploy site to gh-pages branch
         uses: crazy-max/ghaction-github-pages@v1.4.0
         env:
