@@ -11,10 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: npm install and build
-        working-directory: code-complete-game
+        working-directory: fox-game
         run: |
           npm install
-          npm run build -- --public-url
+          npm run build -- --public-url /fox-game/
       - name: Deploy site to gh-pages branch
         uses: crazy-max/ghaction-github-pages@v1.4.0
         env:
